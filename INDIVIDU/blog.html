@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Page 3</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Page-3: Logo di kiri & Judul di kanan -->
+        <header class="blog-header">
+            <div class="blog-header-left">
+                <img src="logo-untar.png" alt="Logo / Sampul Blog" class="blog-header-img">
+            </div>
+            <div class="blog-header-right">
+                <h1>Lorem Ipsum Website</h1>
+                <p>Halaman Resmi Blog Kami</p>
+            </div>
+        </header>
+
+        <!-- Navbar Biru dengan Tab Aktif pada 'Blog' -->
+        <nav class="blog-nav">
+            <ul>
+                <li><a href="individu.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="#contact-popup">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Konten Utama Blog Sesuai Gambar Page-3 -->
+        <main class="blog-content">
+            <h2>Selamat Datang di Blog Lokal Kami</h2>
+            <hr class="title-divider">
+
+            <div class="blog-card">
+                <h3>Artikel Blog Terbaru</h3>
+                <p>Ini adalah halaman blog lokal yang terhubung dari menu utama website.</p>
+                <a href="individu.html" class="back-link">&larr; Kembali ke Halaman Utama</a>
+            </div>
+        </main>
+    </div>
+
+    <!-- Pop Up Identitas Mahasiswa (Page-2) -->
+    <div id="contact-popup" class="modal-overlay">
+        <div class="modal-box">
+            <a href="#" class="modal-close-x">&times;</a>
+            <div class="photo-container">
+                <img src="Norwin3x4.jpg" alt="Foto Mahasiswa">
+            </div>
+            <h2>Profil Mahasiswa</h2>
+            <table class="identity-table">
+                <tr>
+                    <td class="label">NIM</td>
+                    <td>825250010</td>
+                </tr>
+                <tr>
+                    <td class="label">Nama</td>
+                    <td>Norwin Sutresno</td>
+                </tr>
+                <tr>
+                    <td class="label">Kelas</td>
+                    <td>SI.A</td>
+                </tr>
+            </table>
+            <div style="text-align: right;">
+                <a href="#" class="close-btn">Tutup Pop Up</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

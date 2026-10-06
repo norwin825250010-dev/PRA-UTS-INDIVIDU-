@@ -1,0 +1,523 @@
+/* --- RESET & DASAR --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #000000;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* --- KETENTUAN 7a: HEADER HOME (2 KOLOM) --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #440808;
+    color: #ffffff;
+    padding: 20px 30px;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    text-align: right;
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.header-right h1 {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.header-img {
+    width: 120px;
+    height: 75px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 4px;
+    display: block;
+}
+
+/* --- KETENTUAN 7b: MENU NAV HOME (SATU BARIS) --- */
+nav {
+    background-color: #b31a1a;
+    border-top: 1px solid #334155;
+    border-bottom: 1px solid #334155;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 24px;
+    color: #f1f5f9;
+    text-decoration: none;
+    font-weight: 600;
+    /* Ketentuan 6: Transisi */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #e19898;
+    color: #0f172a;
+}
+
+/* --- KETENTUAN 7c: MAIN WRAPPER (2 KOLOM: KIRI & KANAN) --- */
+.main-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+}
+
+.content-left {
+    flex: 3;
+}
+
+.content-left h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+}
+
+/* Ketentuan 7c: Kiri 3 Kolom Gallery (2 Baris) */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-card {
+    flex: 0 0 calc(33.333% - 10px);
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    /* Ketentuan 6: Transisi */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    object-position: center;
+    background-color: #ffffff;
+    border-radius: 0;
+    display: block;
+    /* Ketentuan 6: Opacity & Transisi */
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover img {
+    opacity: 1;
+}
+
+.card-text {
+    padding: 12px;
+}
+
+.gallery-card h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #0f172a;
+}
+
+.gallery-card p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* Ketentuan 7c: Kanan Sidebar 3 Bagian Disusun ke Bawah */
+.sidebar-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-box {
+    background: #f1f5f9;
+    border-left: 4px solid #b31a1a;
+    padding: 15px;
+    border-radius: 4px;
+    /* Ketentuan 6: Transisi */
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-box:hover {
+    background: #e2e8f0;
+}
+
+.sidebar-box h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #b31a1a;
+    color: #0f172a;
+}
+
+.sidebar-box ul {
+    list-style: none;
+}
+
+.sidebar-box li {
+    margin-bottom: 6px;
+}
+
+.sidebar-box p {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.sidebar-box a {
+    display: inline-block;
+    color: #b31a1a;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    /* Ketentuan 6: Transisi */
+    transition: color 0.3s ease;
+}
+
+.sidebar-box a:hover {
+    color: #440808;
+    text-decoration: underline;
+}
+
+/* --- KETENTUAN 7d: FOOTER --- */
+footer {
+    background-color: #b31a1a;
+    color: #cbd5e1;
+    border-top: 3px solid #440808;
+}
+
+.footer-top {
+    display: flex;
+    gap: 20px;
+    padding: 25px;
+    border-bottom: 1px solid #440808;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-col p, .footer-col ul {
+    font-size: 13px;
+    list-style: none;
+}
+
+.footer-col a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #ffffff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    background-color: #440808;
+    color: #ffffff;
+}
+
+/* --- KETENTUAN 3: POP UP IDENTITAS (PAGE-2 VIA CSS :target) --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    /* Ketentuan 6: Transisi & Opacity */
+    transition: visibility 0.3s ease, opacity 0.3s ease;
+    z-index: 999;
+}
+
+.modal-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-box {
+    position: relative;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    width: 380px;
+    max-width: 90%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+    /* Ketentuan 6: Transisi */
+    transition: transform 0.3s ease;
+}
+
+.modal-overlay:target .modal-box {
+    transform: translateY(0);
+}
+
+.modal-close-x {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #64748b;
+    text-decoration: none;
+    line-height: 1;
+    transition: color 0.2s ease;
+}
+
+.modal-close-x:hover {
+    color: #000000;
+}
+
+.photo-container {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.photo-container img {
+    width: 100px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid #b31a1a;
+}
+
+.modal-box h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+    border-bottom: 2px solid #b31a1a;
+    padding-bottom: 8px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.identity-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.identity-table td {
+    padding: 8px 4px;
+    font-size: 14px;
+}
+
+.identity-table td.label {
+    font-weight: bold;
+    color: #475569;
+    width: 35%;
+}
+
+.close-btn {
+    display: inline-block;
+    background: #b31a1a;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    /* Ketentuan 6: Transisi */
+    transition: background 0.3s ease;
+}
+
+.close-btn:hover {
+    background: #440808;
+}
+
+/* --- STYLE SPESIFIK UNTUK BLOG LOKAL (PAGE-3) --- */
+.blog-header {
+    background-color: #440808;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-header-img {
+    width: 120px;
+    height: 75px;
+    object-fit: contain;
+    background-color: #ffffff;
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid #334155;
+}
+
+.blog-header-right {
+    text-align: right;
+    color: #ffffff;
+}
+
+.blog-header-right h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #f9f6f6;
+}
+
+.blog-header-right p {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+.blog-nav {
+    background-color: #b31a1a;
+    border: none;
+}
+
+.blog-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.blog-nav ul li a {
+    display: block;
+    padding: 12px 24px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.blog-nav ul li a:hover {
+    background-color: #440808;
+}
+
+.blog-nav ul li a.active {
+    background-color: #e19898;
+    color: #0f172a;
+}
+
+.blog-content {
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+.blog-content h2 {
+    font-size: 20px;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.title-divider {
+    border: 0;
+    height: 1px;
+    background-color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.blog-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.blog-card h3 {
+    font-size: 16px;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    font-size: 14px;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.back-link {
+    color: #b31a1a;
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #440808;
+}
+/* --- RESPONSIVE --- */
+@media (max-width: 800px) {
+    header, .blog-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .header-right, .blog-header-right {
+        text-align: left;
+    }
+
+    nav ul, .blog-nav ul {
+        flex-wrap: wrap;
+    }
+
+    .main-wrapper {
+        flex-direction: column;
+    }
+
+    .gallery-card {
+        flex: 0 0 calc(50% - 8px);
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-card {
+        flex: 0 0 100%;
+    }
+}
